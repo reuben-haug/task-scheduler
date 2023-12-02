@@ -1,5 +1,5 @@
 import pytest
-from scheduler.main import Site, Task
+from scheduler.main import Task
 from scheduler.database import Database
 
 def test_task():
