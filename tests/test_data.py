@@ -1,6 +1,6 @@
 import sqlite3
 
-from database import setup_database
+from scheduler.database import setup_database
 
 def insert_test_data():
     # Connect to the SQLite database
@@ -29,7 +29,7 @@ def insert_test_data():
 
 def test_database():
     # Connect to the SQLite database
-    conn = sqlite3.connect('schedule.db')
+    conn = sqlite3.connect('scheduler/schedule.db')
 
     # Create a cursor object
     c = conn.cursor()
