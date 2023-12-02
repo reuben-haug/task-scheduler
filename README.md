@@ -15,4 +15,12 @@ This project is a task scheduler for technicians. It uses SQLite for data storag
 Run the main script with Python:
 
 ```bash
-python main.py
+python scheduler/main.py
+```
+
+## Testing
+
+To run the tests, navigate to the project directory and run pytest:
+```bash
+pytest
+```
