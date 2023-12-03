@@ -24,3 +24,7 @@ To run the tests, navigate to the project directory and run pytest:
 ```bash
 pytest
 ```
+
+## TODO
+
+- [ ] Fix failing test cases in `test_database.py` and `test_main.py`.
