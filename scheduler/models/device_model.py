@@ -2,11 +2,10 @@
 
 from .base_model import BaseModel
 
-# Device class for handling device data and operations
+# Device class for handling device data
 class Device(BaseModel):
     def __init__(self, id, name, make, model, description, db):
         super().__init__(db)
-        self.db = db
         self.id = id
         self.name = name
         self.make = make
