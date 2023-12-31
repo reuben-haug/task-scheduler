@@ -11,6 +11,9 @@ class TestBaseRepository:
     @pytest.fixture
     def base_repository(self, db):
         return BaseRepository(db)
+    
+    def test_init(self, base_repository, db):
+        assert base_repository.db == db
 
     def test_fetch_by_id(self, base_repository):
         base_repository.fetch_by_id('table', 1)
