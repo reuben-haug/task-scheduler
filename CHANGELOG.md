@@ -16,6 +16,9 @@ All notable changes to this project will be documented in this file.
 -  test_technician_repository.py
 -  test_task_repository.py
 
+### TODO
+- Refactor unit tests to use generic methods from BaseRepository.
+
 ## [0.2.1 - 2023-12-31]
 
 ### Added
