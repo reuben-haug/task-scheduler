@@ -6,13 +6,12 @@ from ..scheduler.models.device_model import Device
 
 class TestDeviceRepository:
     @pytest.fixture
-    def db(self, mocker):
+    def device(self, mocker):
         return mocker.Mock()
 
     @pytest.fixture
-    def device_repository(self, mocker):
-        db = mocker.Mock()
-        return DeviceRepository(db)
+    def device_repository(self, device):
+        return DeviceRepository(device)
 
     def test_insert(self, device_repository, mocker):
         device_repository.insert('Device 1', 'Make 1', 'Model 1', 'Description 1', True)
