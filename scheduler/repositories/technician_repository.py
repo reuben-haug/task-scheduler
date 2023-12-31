@@ -1,8 +1,11 @@
 # /scheduler/repositories/technician_repository.py
 
 from ..models.technician_model import Technician
+from .base_repository import BaseRepository
 
-# Technician class for handling technician data and operations
-class TechnicianRepository:
-    pass
+# TechnicianRepository holds all the database access logic for the Technician model
+class TechnicianRepository(BaseRepository):
+    # Access the database from BaseRepository
+    def __init__(self, db):
+        super().__init__(db)
 

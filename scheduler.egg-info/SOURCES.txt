@@ -9,5 +9,6 @@ scheduler.egg-info/dependency_links.txt
 scheduler.egg-info/top_level.txt
 tests/__init__.py
 tests/conftest.py
-tests/test_database.py
-tests/test_main.py
+tests/test_base_repository
+tests/test_technician_repository
+tests/test_technician_model

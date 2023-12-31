@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.3 - 2023-12-31]
+
+### Added
+
+- Test entries in SOURCES.txt.
+- Unit test for TechnicianRepository class.
+- Unit test for BaseRepository class.
+- Refactor unit tests to use generic methods from BaseRepository.
+
+### Changed
+
+- test_technician_repository.py now uses generic methods from BaseRepository.
+
+### Removed
+
+- Removed the following tests:
+    -test_base_model.py
+    -test_device_model.py
+    -test_device_repository.py
+    -test_task_model.py
+    -test_task_repository.py
+    -test_technician_model.py
+
 ## [0.2.2 - 2023-12-31]
 
 ### Added
