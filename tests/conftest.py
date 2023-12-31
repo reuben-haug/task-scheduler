@@ -1,7 +1,8 @@
-# conftest.py
+# tests/conftest.py
 import pytest
 import os
-from scheduler.database import Database
+from ..scheduler.database import Database
+from .insert_test_data import insert_test_data
 
 @pytest.fixture
 def db():
@@ -10,9 +11,9 @@ def db():
     db.setup()
     db.setup_tables()
 
-    # Insert test data
-    db.insert_test_data()
-
+    # Insert test data into the database
+    insert_test_data(db)
+    # Return the Database object to the test so it can be used
     yield db
 
     # Teardown: close the database connection after each test

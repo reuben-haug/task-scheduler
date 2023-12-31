@@ -8,7 +8,6 @@ scheduler.egg-info/SOURCES.txt
 scheduler.egg-info/dependency_links.txt
 scheduler.egg-info/top_level.txt
 tests/__init__.py
-tests/conftests.py
-tests/test_site.py
-tests/test_task.py
-tests/test_technician.py
+tests/conftest.py
+tests/test_database.py
+tests/test_main.py
