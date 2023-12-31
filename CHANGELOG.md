@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1 - 2023-12-31]
+
+### Added
+- DB test fixture for testing `Device` repository methods.
+- Added functionality for `Device` to be updated in the database.
+- Added test cases for updating `Device` in the database.
+
+### Changed
+
+- get_by_id repository methods return all rows with the given id.
+
+### TODO
+
+- Add generic get_all method to base model class.
+- Add generic get_by_id method to base model class.
+- Add generic update method to base model class.
+- Add generic delete method to base model class.
+
+
 ## [0.2 - 2023-12-31]
 
 ### Added

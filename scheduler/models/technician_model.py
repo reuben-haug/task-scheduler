@@ -6,8 +6,6 @@ from .base_model import BaseModel
 class Technician(BaseModel):
     def __init__(self, id, name, availability, tasks, db):
         super().__init__(db)
-
-        self.db = db
         self.id = id
         self.name = name
         self.availability = availability
