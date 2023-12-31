@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2 - 2023-12-31]
+
+### Added
+
+- Generic methods for `get_all`, `get_by_id`, `update`, and `delete` to the `BaseModel` class.
+- Unit test for `BaseModel` class.
+
+### Changed
+- Moved CRUD methods from BaseModel to BaseRepository.
+
+### Deprecated
+-  test_technician_repository.py
+-  test_task_repository.py
+
+### TODO
+- Refactor unit tests to use generic methods from BaseRepository.
+
 ## [0.2.1 - 2023-12-31]
 
 ### Added
