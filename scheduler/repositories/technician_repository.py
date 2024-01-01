@@ -7,5 +7,5 @@ from .base_repository import BaseRepository
 class TechnicianRepository(BaseRepository):
     # Access the database from BaseRepository
     def __init__(self, db):
-        super().__init__(db)
+        super().__init__()
 

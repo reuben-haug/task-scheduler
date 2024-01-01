@@ -1,14 +1,14 @@
 # /tests/test_technician_repository.py
 
 import pytest
-from unittest.mock import Mock
 from ..scheduler.repositories.technician_repository import TechnicianRepository
 from ..scheduler.models.technician_model import Technician
+from ..scheduler.repositories.base_repository import BaseRepository
 
-class TestTechnicianRepository:
+class TestTechnicianRepository(BaseRepository):
     @pytest.fixture
-    def db(self):
-        return Mock()
+    def db(self, mocker):
+        return mocker.Mock()
 
     @pytest.fixture
     def technician_repository(self, db):
