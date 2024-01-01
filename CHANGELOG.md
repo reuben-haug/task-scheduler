@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.4 - 2024-01-01]
+
+### Added
+
+- Added generic `id` attribute to `BaseModel` class.
+
+### Removed
+
+- Calls for `update_technician` in `test_technician_model'`.
+
+### TODO
+
+- Restructure `technician_model` and remove database references.
+- Add new unit tests for `technician_model`.
+
 ## [0.2.3 - 2023-12-31]
 
 ### Added
