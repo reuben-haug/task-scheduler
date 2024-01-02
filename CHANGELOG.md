@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Generic `get_attribute` method to BaseModel.
 - `status` attribute to `Task` model.
 - Added unit test for `assignable.py`.
 - Created `assignable.py` to abstract adding tasks directly from technicians.
