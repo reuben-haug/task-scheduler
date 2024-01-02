@@ -1,14 +1,15 @@
 #Path /scheduler/models/assignable.py
 
 class Assignable:
-    def __init__(self):
-        self.tasks = []
-        self.availability = 0
+    def __init__(self, availability, tasks=None):
+        self.availability = availability
+        self.tasks = tasks if tasks is not None else []
 
     def add_task(self, task):
-        if self.availability >= task.duration:
-            self.tasks.append(task)
-            self.availability -= task.duration
-            return True
-        else:
-            return False
+        if task in self.tasks:
+            raise ValueError('Task already assigned')
+        if task.duration > self.availability:
+            raise ValueError('Not enough availability')
+        self.tasks.append(task)
+        self.availability -= task.duration
+        return True

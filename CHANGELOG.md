@@ -5,7 +5,11 @@ All notable changes to this project will be documented in this file.
 ## [0.2.5 - 2024-01-01]
 
 ### Added
-- `test_task_model.py` now uses Mock db calls.
+
+- `status` attribute to `Task` model.
+- Added unit test for `assignable.py`.
+- Created `assignable.py` to abstract adding tasks directly from technicians.
+- Models now inherit their name and id from BaseModel.
 
 ### Changed
 

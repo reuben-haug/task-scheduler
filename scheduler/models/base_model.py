@@ -1,5 +1,6 @@
 # Path: scheduler/models/base_model.py
 
 class BaseModel:
-    # Define the id for all models
-    id = None
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
