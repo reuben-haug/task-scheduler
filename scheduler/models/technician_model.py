@@ -3,7 +3,7 @@
 from .base_model import BaseModel
 
 # Technician class for representing technician data
-class Technician(BaseModel):
+class Technician(BaseModel, Assignable):
     def __init__(self, id, name, availability, tasks, db):
         super().__init__()
         self.id = id
