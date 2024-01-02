@@ -6,6 +6,6 @@ from .base_repository import BaseRepository
 # TechnicianRepository holds all the database access logic for the Technician model
 class TechnicianRepository(BaseRepository):
     # Access the database from BaseRepository
-    def __init__(self, db):
-        super().__init__()
+    def __init__(self):
+        super().__init__(self.db)
 

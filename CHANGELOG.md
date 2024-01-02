@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.5 - 2024-01-01]
+
+### Added
+
+- `status` attribute to `Task` model.
+- Added unit test for `assignable.py`.
+- Created `assignable.py` to abstract adding tasks directly from technicians.
+- Models now inherit their name and id from BaseModel.
+
+### Changed
+
+- `test_technician_model` now uses Mock db calls.
+
 ## [0.2.4 - 2024-01-01]
 
 ### Added
