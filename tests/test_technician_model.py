@@ -23,14 +23,14 @@ class TestTechnicianModel(BaseModel):
         #assert technician.db == db
 
     def test_add_task(self, technician):
-        task = Task(1, 'Task 1', 3, 'Test Description 1')
+        task = Task(1, 'Task 1', 3, 'Test Description 1', self.db)
         technician.add_task(task)
         assert technician.availability == 5
         assert technician.tasks == [task]
         #technician.db.update_technician.assert_called_once_with(technician)
 
     def test_add_task_not_enough_availability(self, technician):
-        task = Task(1, 'Task 1', 10, 'Test Description 1')  # Task duration is greater than technician's availability
+        task = Task(1, 'Task 1', 10, 'Test Description 1', self.db)  # Task duration is greater than technician's availability
         with pytest.raises(ValueError, match='Not enough availability'):
             technician.add_task(task)
         assert technician.availability == 8  # Availability should not change

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.5 - 2024-01-01]
+
+### Added
+- `test_task_model.py` now uses Mock db calls.
+
+### Changed
+
+- `test_technician_model` now uses Mock db calls.
+
 ## [0.2.4 - 2024-01-01]
 
 ### Added

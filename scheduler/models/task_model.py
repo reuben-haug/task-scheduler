@@ -4,7 +4,7 @@ from .base_model import BaseModel
 
 # Task class for handling task data
 class Task(BaseModel):
-    def __init__(self, id, name, duration, description, ):
+    def __init__(self, id, name, duration, description, db):
         super().__init__()
         self.id = id
         self.name = name
